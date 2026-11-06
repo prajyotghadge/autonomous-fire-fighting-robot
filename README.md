@@ -3,14 +3,15 @@ ESP32-based autonomous fire-fighting robot prototype using flame detection, ESP-
 
 ## Working Principle
 
-1. The remote fire detection unit continuously monitors its surroundings using Flame Sensor 1.
-2. When fire is detected, ESP32 #1 sends a wireless alert to the robot using ESP-NOW.
-3. ESP32 #2 receives the alert and activates the robot.
-4. The robot follows a predefined path using its 5-channel IR sensor.
-5. When the onboard Flame Sensor 2 detects fire, the robot stops.
-6. The water pump activates to suppress the fire.
-7. The pump continues running while the onboard flame sensor detects fire.
-8. When the onboard flame sensor no longer detects fire, the pump switches off.
+1. The remote fire detection unit monitors for fire using a flame sensor.
+2. ESP32 #1 sends fire detection information and flame direction to the robot through ESP-NOW.
+3. ESP32 #2 receives the wireless message.
+4. The robot follows a predefined path using its IR sensor array.
+5. When a fire alert is received, the robot stops.
+6. The servo motor adjusts the water nozzle according to the received flame direction.
+7. The water pump activates for a predefined duration of 5 seconds.
+8. The pump switches off automatically after the 5-second interval.
+9. The robot resumes line-following operation.
 
 ## System Architecture
 
