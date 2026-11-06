@@ -58,3 +58,21 @@ ESP-NOW enables wireless communication between the remote fire detection unit an
 ## Circuit Diagram
 
 ![Circuit Diagram](images/circuit-diagram.png)
+
+## Pin Connections
+
+| ESP32 GPIO | Connected Component | Function |
+|---|---|---|
+| GPIO 18 | L298N IN1 | Motor A Direction 1 |
+| GPIO 19 | L298N IN2 | Motor A Direction 2 |
+| GPIO 21 | L298N IN3 | Motor B Direction 1 |
+| GPIO 22 | L298N IN4 | Motor B Direction 2 |
+| GPIO 23 | L298N ENA | Motor A Speed |
+| GPIO 25 | L298N ENB | Motor B Speed |
+| GPIO 26 | IRF540N Gate | Water Pump ON/OFF |
+| GPIO 27 | SG90 Servo Signal | Nozzle Angle Control |
+| GPIO 32 | Flame Sensor D-OUT | Digital Fire Detection |
+| GPIO 33 | Flame Sensor A-OUT | Analog Flame Intensity |
+| VIN (5V) | Buck Converter OUT+ | ESP32 Power Supply |
+| 3V3 | Flame Sensor VCC | Sensor Power Supply |
+| GND | Common Ground | Common Reference |
