@@ -28,3 +28,23 @@ ESP32-based autonomous fire-fighting robot prototype using flame detection, ESP-
 
 ### Communication
 ESP-NOW enables wireless communication between the remote fire detection unit and the mobile robot without requiring a Wi-Fi router.
+
+## Hardware Components
+
+| Component | Quantity | Purpose |
+|---|---:|---|
+| ESP32 Development Board | 2 | Wireless communication and robot control |
+| Flame Sensor | 2 | Remote and onboard fire detection |
+| 5-Channel IR Sensor | 1 | Line-following navigation |
+| L298N Motor Driver | 1 | DC motor control |
+| DC Geared Motors | 2 | Robot movement |
+| SG90 Servo Motor | 1 | Nozzle direction control |
+| Relay Module | 1 | Water pump switching |
+| Water Pump | 1 | Fire suppression |
+| Buck Converter | 1 | Voltage regulation |
+| Battery | 1 | Power supply |
+
+## Software and Communication
+- Arduino IDE
+- Embedded C / Arduino framework
+- ESP-NOW wireless communication
