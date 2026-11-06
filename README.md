@@ -49,3 +49,9 @@ ESP-NOW enables wireless communication between the remote fire detection unit an
 - Arduino IDE
 - Embedded C / Arduino framework
 - ESP-NOW wireless communication
+
+## Project Prototype
+
+![Autonomous Fire Fighting Robot](images/WhatsApp%20Image%202026-11-07%20at%2012.30.19%20AM.jpeg)
+
+*Physical prototype of the ESP32-based autonomous fire-fighting robot.*
