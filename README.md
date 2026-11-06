@@ -79,3 +79,14 @@ ESP-NOW enables wireless communication between the remote fire detection unit an
 - ESP32 VIN: Regulated 5V supply
 - Servo VCC: Regulated 5V supply
 - Common GND: Shared ground connection
+### Line Following Sensor Configuration
+
+The robot uses a 5-channel IR sensor array, but only three channels
+(S1, S3 and S5) are used for line-following control.
+
+- S1: Left detection
+- S3: Centre detection
+- S5: Right detection
+
+The ESP32 processes these three inputs to control the
+robot's movement through the L298N motor driver.
